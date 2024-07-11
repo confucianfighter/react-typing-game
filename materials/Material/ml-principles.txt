@@ -1,0 +1,9 @@
+The negative log likelihood is the negative of the sum of the logarithms of the probabilities of each character in the sequence, given all the characters that came before it.
+The cross-entropy loss is the negative sum of the true label's value times the logarithm of the predicted probability, summed over all data points.
+The softmax function converts a vector of raw scores into probabilities by exponentiating each score, and then dividing by the sum of all the exponentiated scores.
+Gradient descent updates the model parameters by moving them in the opposite direction of the gradient of the loss function, scaled by the learning rate.
+The attention mechanism in a Transformer computes a weighted sum of values, where the weights are determined by the similarity between the query and the key, scaled by the square root of the key's dimension. The softmax function is applied to these similarity scores to obtain the weights.
+Dropout regularization works by randomly setting a fraction of the input units to zero during training, with the probability of keeping each unit defined by the dropout rate.
+p.
+The Adam optimizer updates the model parameters using estimates of the first and second moments of the gradient. These estimates are corrected for bias, and the parameters are updated using a learning rate, scaled by the corrected estimates.
+The AdamW optimizer updates model parameters using estimates of the first and second moments of the gradients. Unlike Adam, AdamW decouples the weight decay from the gradient update, which helps to regularize the model by penalizing large weights more effectively. The parameters are updated using a learning rate, scaled by the bias-corrected moment estimates, and a weight decay term.
